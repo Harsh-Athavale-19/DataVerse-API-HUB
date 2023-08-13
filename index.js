@@ -1,11 +1,21 @@
+// Imports
 const express = require("express");
-const app = express();
-const port = 3000;
+const cors = require("cors");
+require("dotenv").config();
 
+// Initialization
+const app = express();
+const PORT = process.env.PORT || 5000;
+
+// Enable cors
+app.use(cors());
+
+// Routes
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.send("Server Started");
 });
 
-app.listen(port, () => {
-  console.log(`App listening on port ${port}`);
+// App Listening
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
