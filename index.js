@@ -15,6 +15,8 @@ app.get("/", (req, res) => {
   res.send("Server Started");
 });
 
+app.use("/news", require("./routes/news")); //  News API
+
 // App Listening
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
