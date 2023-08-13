@@ -1,0 +1,18 @@
+{
+  "name": "dataverse-api-hub",
+  "version": "1.0.0",
+  "description": "Unlock seamless data integration across projects with DataVerse API Hub. Centralize diverse endpoints for a unified data experience.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "author": "HARSH A. A.",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
